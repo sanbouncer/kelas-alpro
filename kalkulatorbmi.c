@@ -22,10 +22,19 @@ int main (){
 
     printf("BMI = %.2f\n", BMI);
 
-    if (BMI >= 17 && BMI <= 23){
-        printf ("Berat badan ideal\n");} 
-    else {
-        printf ("Berat badan tidak ideal\n");} break;
+    if (BMI >= 18.5 && BMI <= 25){
+        printf ("Berat badan ideal\n");
+        } 
+    else if (BMI < 18.5 && BMI >=16){
+        printf ("Berat badan di bawah normal\n");
+        }
+    else if (BMI > 25 && BMI <= 40){
+        printf ("Berat badan di atas normal\n");
+        }
+    else if (BMI > 40 || BMI < 16){
+        printf ("Periksa ulang input anda\n");
+        }
+    break;
 
     case 2:
 
@@ -40,9 +49,18 @@ int main (){
 
     printf("BMI = %.2f\n", BMI);
 
-    if (BMI >= 18 && BMI <= 25){
+    if (BMI >= 18.5 && BMI <= 25){
         printf ("Berat badan ideal\n");} 
-    else {
-        printf ("Berat badan tidak ideal\n");} break;}
+    else if (BMI < 18.5 && BMI >=16){
+        printf ("Berat badan di bawah normal\n");
+        }
+    else if (BMI > 25 && BMI <= 40){
+        printf ("Berat badan di atas normal\n");
+        }
+    else if (BMI > 40 || BMI < 16){
+        printf ("Periksa ulang input anda\n");
+        }
+    break;
     return 0;
+}
 }
